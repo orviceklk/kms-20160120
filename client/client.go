@@ -9233,7 +9233,7 @@ type GetSecretValueResponseBody struct {
 	// 00000000000000000000000000000001
 	VersionId *string `json:"VersionId,omitempty" xml:"VersionId,omitempty"`
 	// The stage labels that mark the secret versions.
-	VersionStages [][]*string `json:"VersionStages,omitempty" xml:"VersionStages,omitempty" type:"Repeated"`
+	VersionStages map[string][]*string `json:"VersionStages,omitempty" xml:"VersionStages,omitempty" type:"Repeated"`
 }
 
 func (s GetSecretValueResponseBody) String() string {
@@ -9304,7 +9304,7 @@ func (s *GetSecretValueResponseBody) SetVersionId(v string) *GetSecretValueRespo
 	return s
 }
 
-func (s *GetSecretValueResponseBody) SetVersionStages(v [][]*string) *GetSecretValueResponseBody {
+func (s *GetSecretValueResponseBody) SetVersionStages(v map[string][]*string) *GetSecretValueResponseBody {
 	s.VersionStages = v
 	return s
 }
