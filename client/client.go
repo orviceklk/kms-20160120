@@ -1,4 +1,4 @@
-// This file is auto-generated, don't edit it. Thanks.
+VersionStages// This file is auto-generated, don't edit it. Thanks.
 package client
 
 import (
@@ -9233,7 +9233,7 @@ type GetSecretValueResponseBody struct {
 	// 00000000000000000000000000000001
 	VersionId *string `json:"VersionId,omitempty" xml:"VersionId,omitempty"`
 	// The stage labels that mark the secret versions.
-	VersionStages []*string `json:"VersionStages,omitempty" xml:"VersionStages,omitempty" type:"Repeated"`
+	VersionStages [][]*string `json:"VersionStages,omitempty" xml:"VersionStages,omitempty" type:"Repeated"`
 }
 
 func (s GetSecretValueResponseBody) String() string {
