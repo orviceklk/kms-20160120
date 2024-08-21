@@ -9304,7 +9304,7 @@ func (s *GetSecretValueResponseBody) SetVersionId(v string) *GetSecretValueRespo
 	return s
 }
 
-func (s *GetSecretValueResponseBody) SetVersionStages(v []*string) *GetSecretValueResponseBody {
+func (s *GetSecretValueResponseBody) SetVersionStages(v [][]*string) *GetSecretValueResponseBody {
 	s.VersionStages = v
 	return s
 }
